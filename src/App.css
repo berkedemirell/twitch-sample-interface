@@ -1,0 +1,1139 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+  }
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#382d2d;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem;
+    background-color: rgb(17, 13, 13);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem black;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.logo ion-icon {
+    font-size: 30px;
+}
+.logo ion-icon:hover {
+    transform: scale(110%);
+}
+
+.prof-pic {
+    width: 3rem;
+    height: 2.5rem;
+    border-radius: 100%;
+}
+
+.inline-general {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.gen-link {
+    color: #fff;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+
+.gen-link:hover {
+    color: rgb(193, 96, 223);
+}
+
+.input-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.s-input {
+    width: 355px;
+    height: 35px;
+    border: black;
+    border-radius: 0.5rem;
+    background-color: rgb(39, 34, 34);
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.search-btn {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(44, 33, 33);
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: rgb(75, 57, 57);
+}
+.search-btn:active {
+    background-color: black;
+}
+.search-btn ion-icon {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+}
+
+.profile-infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.prof-link {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(17, 13, 13);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+.prof-link-bit {
+    height: 35px;
+    width: 65px;
+    border-radius: 0.5rem;
+    font-family: monospace;
+    font-weight: 600;
+    background-color: rgb(59, 50, 50);
+    border: none;
+    color: #fff;
+    padding: 0.1rem;
+    cursor: pointer;
+}
+.prof-link-bit:hover {
+    background-color: rgb(39, 29, 29);
+}
+.prof-link-bit:active {
+    background-color: rgb(17, 15, 15);
+}
+.prof-link ion-icon {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.prof-link:hover {
+    background-color: rgb(59, 50, 50);
+}
+
+.more-cont {
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    background-color: rgb(39, 29, 29);
+    color: #fff;
+    font-family: monospace;
+    border-radius: 0.5rem;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    z-index: 1;
+}
+.more-cont::-webkit-scrollbar {
+    display: none;
+  }
+
+.genel {
+    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ffffff7e;
+    padding: 0.5rem;
+}
+
+.more-list-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.more-list-item {
+    height: 30px;
+    width: 190px;
+    padding: 0.4rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+}
+
+.more-list-item:hover {
+    background-color: rgb(75, 57, 57);
+}
+
+.more-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.prime-cont {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: absolute;
+    right: 17%;
+    background-color: rgb(39, 30, 30);
+    color: #fff;
+    font-family: monospace;
+    width: 400px;
+    height: 600px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-radius: 0.5rem;
+}
+.prime-cont::-webkit-scrollbar {
+    display: none;
+  }
+
+.header-prime {
+    font-size: 1.4rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(114, 109, 109, 0.5);
+    padding: 1.2rem;
+}
+
+.prime-p {
+    font-size: 1.1rem;
+}
+
+.prime-btn {
+    background-color: rgb(180, 39, 180);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.prime-btn:hover {
+    background-color: rgb(114, 26, 114);
+}
+
+.prime-btn:active {
+    background-color: rgb(66, 26, 105);
+}
+
+.prime-ziyaret {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+    gap: 10px;
+    border-bottom: 1px solid #574e4e7c ;
+}
+
+.games{
+    margin-top: 20px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.game-cont {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.game-img {
+    width: 350px;
+    height: 250px;
+}
+
+.game-cont h4 {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.game-cont h2 {
+    font-size: 1.7rem;
+    width: 350px;
+}
+
+.game-cont p {
+    font-size: 1.2rem;
+}
+
+.game-cont span {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    display: block;
+}
+
+.al-btn {
+    border: none;
+    background-color: rgb(180, 39, 180);
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.al-btn:hover {
+    background-color: rgb(114, 26, 114);
+}
+.al-btn:active {
+    background-color: rgb(66, 26, 105);
+}
+.game-sep {
+    border-bottom: 1px solid #ffffff79;
+    margin-top: 10px;
+}
+
+.not-cont {
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+    height: 600px;
+    right: 10%;
+    background-color: rgb(32, 25, 25);
+    border: none;
+    border-radius: 0.4rem;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.not-cont::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.not-inner-cont {
+    padding: 1rem;
+    font-family: monospace;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-radius: 0.5rem;
+}
+
+.bildirimler {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ffffff86;
+    margin-bottom: 10px;
+}
+
+.icon ion-icon {
+    font-size: 1.5rem;
+}
+
+.p-bild {
+    font-size: 1.6rem;
+}
+
+.ayarlar {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+
+.not-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 7rem;
+}
+
+.not-btns button {
+    border: none;
+    background-color: rgb(17, 13, 13);
+    font-family: monospace;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+}
+.not-btns button:hover {
+    background-color: rgb(59, 48, 48);
+}
+
+.stick-background {
+    background-color: rgb(59, 48, 48);
+}
+
+.messages {
+    margin-top: 20px;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.message:hover {
+    background-color:rgb(68, 54, 54);
+}
+
+.user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.mes-cont .mes-p{
+    color: #fff;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
+.mes-cont .mes-span {
+    color: #ffffff81;
+}
+
+.kanalım {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.kanal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center ;
+    justify-content: center;
+    width: 350px;
+}
+
+.kanal img {
+    width: 15rem;
+    height: auto;
+    border-radius: 100%;
+}
+.kanal h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.kanal p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.kanal button {
+    width: 200px;
+    height: 30px;
+    border: none;
+    background-color: rgb(78, 58, 58);
+    color: #fff;
+    font-family: monospace;
+    font-size: 1.1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.kanal button:hover {
+    background-color: rgb(90, 71, 71);
+}
+.kanal button:active {
+    background-color: rgb(43, 34, 34);
+}
+
+.bit-cont {
+    position: absolute;
+    background-color: rgb(31, 24, 24);
+    color: #fff;
+    width: 400px;
+    height: 500px;
+    border-radius: 0.4rem;
+    right: 5%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    z-index: 1;
+}
+.bit-cont::-webkit-scrollbar {
+    display: none;
+  }
+
+.bit-inner-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.bit-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    border-bottom: 1px solid #ffffff79;
+    padding: 0.4rem;
+    margin-bottom: 10px;
+}
+
+.bit-header p {
+    font-size: 1.3rem;
+}
+
+.bit-header span {
+    font-size: 1.2rem;
+    color: #ffffffa4;
+}
+
+.bit-fiyatlar {
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ffffff81;
+    padding: 0.7rem;
+    margin-bottom: 10px;
+}
+.fiyat-items {
+    list-style: none;
+}
+
+.fiyat-item {
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: monospace;
+    padding: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ffffff79;
+}
+
+.bit-value {
+    font-size: 1.5rem;
+}
+
+.buy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    width: auto;
+}
+
+.buy-btn {
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    border: none;
+    background-color: rgb(216, 51, 216);
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: monospace;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: rgb(131, 25, 131);
+}
+
+.buy-btn:active {
+    background-color: rgb(68, 31, 105);
+}
+
+.buy span {
+    font-size: 1rem;
+    width: auto;
+}
+
+.prof-cont {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(32, 25, 25);
+    color: #fff;
+    width: 225px;
+    height: 500px;
+    border-radius: 0.5rem;
+    right: 2%;
+    top:9%;
+    z-index: 1;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.prof-cont::-webkit-scrollbar {
+    display: none;
+  }
+
+.prof-inner-cont {
+    padding: 0.5rem;
+}
+
+.prof {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 1rem;
+}
+
+.line {
+    border-bottom: 1px solid #ffffff83;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.prof img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+}
+
+.prof p {
+    font-size: 1.2rem;
+}
+
+.prof-list-items {
+    list-style: none;
+    padding: 1rem;
+}
+
+.prof-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 7px;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+}
+.prof-list-item:hover {
+    background-color: #382d2d;
+}
+
+.prof-list-item ion-icon {
+    font-size: 1.3rem;
+}
+
+.prof-list-item p {
+    font-size: 1rem;
+}
+.side-container {
+    height: 92vh;
+    background-color: rgb(17, 13, 13);
+    color: #fff;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.side-container::-webkit-scrollbar {
+    display: none;
+  }
+.side-bar {
+    padding: 0.3rem;
+}
+.side-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+}
+.narrow ion-icon{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+}   
+.following {
+    border: none;
+    background-color: rgb(17, 13, 13);
+    width: 100%;   
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    cursor: pointer;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(245, 222, 179, 0.452);
+}
+.following:hover {
+    background-color: #4d3d3d;
+}
+.following-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.channel-filter ion-icon {
+    font-size: 1.7rem;
+}
+.channel-filter {
+    margin-right: 0.5rem;
+}
+.lists-channel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.list-channel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+    padding-right: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+.list-channel:hover {
+    background-color: #504040;
+}
+.outer-list-channel {
+    margin-bottom: 0.3rem;
+}
+.channel-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+}
+.channel-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.channel-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+.channel-game {
+    font-size: 1rem;
+    opacity: 0.85;
+    text-align: center;
+}
+.red-circle {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: rgb(153, 18, 18);
+    border-radius: 100%;
+}
+.viewer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.recomms-header {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(245, 222, 179, 0.445);
+}
+.collapsed-container {
+    background-color: rgb(17,13,13);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.collapsed {
+    height: 92vh;
+    max-width: 100%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.collapsed::-webkit-scrollbar {
+    display: none;
+  }
+.collapse-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 0.5rem;
+}
+.collapse-expand {
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(17, 13, 13);
+    color: #fff;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.collapse-expand:hover {
+    background-color: #423535;
+    border-radius: 0.5rem;
+}
+.collapse-follow, .recomms-icon {
+    font-size: 2rem;
+    border: none;
+    background-color: rgb(17,13,13);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lists-collapse {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+.collapsed-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+}
+.side-bar-main {
+    margin-top: 0.03rem;
+    max-width: 20%;
+}
+.filtered-span {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+.chat {
+    width: 20%;
+    height: 92vh;
+    background-color: rgb(17, 13, 13);
+    color: #fff;
+}
+.chat-side {
+    padding: 1rem;
+}
+.chat-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(245, 222, 179, 0.452);
+    padding: 0.3rem;
+    margin-bottom: 0.7rem;
+}
+.chat-header ion-icon {
+    font-size: 1.7rem;
+    color: #fff;
+}
+.yayın-sohbeti {
+    font-size: 1.4rem;
+}
+.chat-body {
+    display: flex;
+    height: 69vh;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.chat-body::-webkit-scrollbar {
+    display: none;
+  }
+
+.chat-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 12px;
+}
+.user-badges {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 1.15rem;
+    justify-content: center;
+}
+.badges {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    font-size: 1.2rem;
+    min-width: 40px;
+}
+
+.message-name {
+    font-weight: 600;
+}
+.user-message {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.collapsed-chat {
+    border-radius: 0.5rem;
+    background-color: rgb(17, 13, 13);
+}
+
+.collapsed-chat ion-icon {
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgb(17, 13, 13);
+    border-radius: 0.5rem;
+}
+
+.input-message {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0.2rem;
+}
+.input {
+    width: 80%;
+    height: 30px;
+    padding: 0.4rem;
+    background-color: rgb(123, 34, 131);
+    color: #fff;
+    border-radius: 0.5rem;
+    margin-right: 3px;
+}
+.submit-message {
+    width: auto;
+    height: 32px;
+    padding: 0.2rem;
+    color: #fff;
+    background-color: rgb(6, 43, 6);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.chat-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px;
+}
+.chat-müdavim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    font-size: 1.3rem;
+}
+.chat-bottom ion-icon {
+    font-size: 1.5rem;
+}
+.main-content {
+    background-color: #382d2d;
+    height: 92.70vh;
+    width: auto;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    color: #fff;
+}
+.main-content::-webkit-scrollbar {
+    display: none;
+  }
+.streamer img{
+    display: inline-block;
+    height: 515px;
+}
+.streamer-view {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 300px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.4rem;
+
+}
+.str-img img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
+}
+.streamer-info {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+.str-img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 80px;
+    height: 85px;
+    position: relative;
+}
+.str-img span {
+    position: absolute;
+    bottom: 7px;
+    left: 12px;
+    border: 1px solid red;
+    background-color: rgba(88, 10, 10, 0.973);
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+    font-size: 1rem;
+}
+.str-name {
+    padding: 0.5rem;
+    margin-bottom: 0;
+}
+.str-name h3 {
+    font-size: 1.5rem;
+}
+.str-name p {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+.str-game {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.3rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+.str-game a {
+    color: #fff;
+    font-size: 1.1rem;
+}
+.cats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 0.5rem;
+}
+.cats a {
+    text-decoration: none;
+    border: 1px solid rgb(80, 72, 72);
+    padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+    background-color: rgb(73, 72, 72);
+    border-radius: 1.2rem;
+}
+.streamer-subs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+.str-subs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.icons-sub ion-icon {
+    font-size: 2rem;
+    color: rgb(179, 153, 153);
+}
+.abone-ol {
+    font-size: 1.4rem;
+    background-color: rgb(123, 34, 131);
+    padding: 0.4rem 0.9rem 0.4rem 0.9rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.abone-ol:hover {
+    background-color: rgb(99, 29, 105);
+}
+.abone-ol:active {
+    background-color: rgb(131, 25, 131);
+}
+.str-viewer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.6rem;
+}
+.izleyici {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    font-size: 1.2rem;
+}
+.izleyici ion-icon {
+    font-size: 1.7rem;
+    color: rgb(197, 24, 24);
+}
+.timer {
+    font-size: 1.2rem;
+}
+
+
